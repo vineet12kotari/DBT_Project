@@ -5,4 +5,5 @@ ID as cust_id
 ,REGION
 ,CREATED_AT
 ,UPDATED_AT
-from DBT_DB.RAW_SCHEMA.CUSTOMER
+from --DBT_DB.RAW_SCHEMA.CUSTOMER
+{{ source('raw_src', 'CUSTOMER') }}

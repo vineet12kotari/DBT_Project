@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: raw_src  # this is the source_name
+    database: DBT_DB
+    schema: RAW_SCHEMA
+    
+    tables:
+      # Generate model
+      - name: CUSTOMER  # this is the table_name
+      # Generate model
+      - name: ORDERS  # this is the table_name
+      - name: ORDER_ITEMS  # this is the table_name
+      - name: PAYMENTS # this is the table_name
+      - name: PRODUCTS  # this is the table_name
+
+
+  - name: raw_sf  # this is the source_name
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    
+    tables:
+      # Generate model
+      - name: NATION  # this is the table_name
